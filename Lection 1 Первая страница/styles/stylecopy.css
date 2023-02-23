@@ -1,0 +1,56 @@
+html,
+body {
+	background-color: #FFE4C4;
+	min-height: 100vh;
+}
+
+body {
+	width: 600px;
+	margin: 0 auto;
+	background-color: #FFE4B5;
+	padding: 02 20px 20px 20px;
+	border: 2px solid white;
+}
+
+
+header {
+	background: lightcoral;
+}
+
+MAIN {
+
+	background: aquamarine;
+	display: grid;
+	grid-template-columns: 200px 1fr 200px; */
+	gap: 20px;
+}
+
+aside{
+background: greenyellow;
+
+}
+footer {
+
+	background-color: white;
+}
+
+nav {
+	background: brown;
+}
+
+.container {
+	min-height: 100vh;
+	display: grid;
+	gap: 20px;
+	grid-template-rows: minmax(200px, auto) auto;
+	grid-template-rows: auto 1fr auto;
+
+}
+
+
+/* @media (min-wdth:992px){
+main{
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+}
+} */
