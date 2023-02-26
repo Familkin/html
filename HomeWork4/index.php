@@ -22,11 +22,10 @@
       font-family: 'Jost', sans-serif;
     }
   </style>
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 
 <body class="w3-light-grey">
-  <i class="fa fa-address-book-o" aria-hidden="true" style="font-size: 100px;"></i>
+
   <!-- Page Container -->
   <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
@@ -59,14 +58,12 @@
               "Adobe Photoshop" => 25,
               "Photography" => 80,
               "Illustrator" => 100,
-              "Media" => 90,
+              "Media" => 90
             ];
+
+
+
             ?>
-
-
-
-
-            $skills[0][0]
             <p>Adobe Photoshop</p>
             <div class="w3-light-grey w3-round-xlarge w3-small">
               <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
@@ -108,88 +105,79 @@
         <!-- End Left Column -->
       </div>
 
-
-
-
-
       <!-- Right Column -->
+
+
       <?php
-      // ДЗ: формируем массив c опытом работы
+
+
+
+      // формируем массив c опытом работы
       $job = [
         'job_name' => ['GB', 'Бэттери Тим', 'Студия Лебедева'],
         'job_data' => ['2022-настоящее время', '2000-2006', '1999-2000'],
         'job_desc' => ['Много интересной работы', 'Разная работа', 'Очень много креативной работы']
       ]
       ?>
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Опыт работы</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>
-              <?php echo $job['job_name'][0]; ?>
-            </b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>
-            <?php echo $job['job_data'][0]; ?>
-          </h6>
-          <p>
-            <?php echo $job['job_desc'][0]; ?>
-          </p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>
-              <?php echo $job['job_name'][1]; ?>
-            </b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>
-            <?php echo $job['job_data'][1]; ?>
-          </h6>
-          <p>
-            <?php echo $job['job_desc'][1]; ?>
 
-
-
-
-
-
-
-
-          <div class="w3-container w3-card w3-white">
-            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Образование</h2>
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>gb.ru</b></h5>
-              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
-              <p>Web Development! All I need to know in one place</p>
-              <hr>
-            </div>
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>London Business School</b></h5>
-              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
-              <p>Master Degree</p>
-              <hr>
-            </div>
-            <div class="w3-container">
-              <h5 class="w3-opacity"><b>School of Coding</b></h5>
-              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
-              <p>Bachelor Degree</p><br>
-            </div>
+      <div class="w3-twothird">
+        <div class="w3-container w3-card w3-white w3-margin-bottom">
+          <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Опыт работы</h2>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>
+                <?php echo $job['job_name'][0]; ?>
+              </b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>
+              <?php echo $job['job_data'][0]; ?>
+            </h6>
+            <p>
+              <?php echo $job['job_desc'][0]; ?>
+            </p>
+            <hr>
           </div>
-
-          <!-- End Right Column -->
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>
+                <?php echo $job['job_name'][1]; ?>
+              </b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>
+              <?php echo $job['job_data'][1]; ?>
+            </h6>
+            <p>
+              <?php echo $job['job_desc'][1]; ?>
+            </p>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>
+                <?php echo $job['job_name'][2]; ?>
+              </b></h5>
+            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>
+              <?php echo $job['job_data'][2]; ?>
+            </h6>
+            <p>
+              <?php echo $job['job_desc'][2]; ?>
+            </p><br>
+          </div>
         </div>
-
-        <!-- End Grid -->
       </div>
 
-      <!-- End Page Container -->
+      <!-- End Right Column -->
     </div>
 
-    <!-- Footer -->
-    <footer class="w3-container w3-teal w3-center w3-margin-top">
-      <p>Find me on social media.</p>
-      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-      <i class="fa fa-twitter w3-hover-opacity"></i>
-      <i class="fa fa-linkedin w3-hover-opacity"></i>
-      <!-- End footer -->
-    </footer>
+    <!-- End Grid -->
+  </div>
+
+  <!-- End Page Container -->
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-teal w3-center w3-margin-top">
+    <p>Find me on social media.</p>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <!-- End footer -->
+  </footer>
 
 </body>
 
